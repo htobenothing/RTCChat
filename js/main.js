@@ -13,7 +13,7 @@ var configuration = {
 
 // var configuration = null;
 
-// var roomURL = document.getElementById('url');
+var roomURL = document.getElementById('url');
 var video = document.querySelector('video');
 var photo = document.getElementById('photo');
 var photoContext = photo.getContext('2d');
