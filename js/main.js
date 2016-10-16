@@ -66,7 +66,7 @@ socket.on('joined', function(room, clientId) {
 socket.on('full', function(room) {
   alert('Room ' + room + ' is full. We will create a new room for you.');
   window.location.hash = '';
-  window.location.reload();
+  // window.location.reload();
 });
 
 socket.on('ready', function() {
@@ -86,7 +86,7 @@ socket.on('message', function(message) {
 // Join a room
 socket.emit('create or join', room);
 
-if (location.hostname.match(/localhost|127\.0\.0/)) {
+if (location.hostname.match(/localhost|127\.0\.0|54\.169\.227\.221/)) {
   socket.emit('ipaddr');
 }
 
